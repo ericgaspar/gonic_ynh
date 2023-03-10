@@ -31,9 +31,9 @@ ynh_script_progression --message="Building app..." --weight=1
 
 ynh_exec_warn_less ynh_install_go --go_version=$go_version
 ynh_use_go
-#pushd $install_dir/
-	GOBIN=$install_dir $ynh_go install go.senan.xyz/gonic/cmd/gonic@latest
-#popd
+pushd $install_dir/
+	GOBIN=/usr/local/bin $ynh_go install go.senan.xyz/gonic/cmd/gonic@latest
+popd
 
 ynh_remove_go
 
