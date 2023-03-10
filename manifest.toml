@@ -49,4 +49,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "build-essential git sqlite libtag1-dev ffmpeg mpv"
+    packages = "build-essential git sqlite3 libtag1-dev ffmpeg mpv"
